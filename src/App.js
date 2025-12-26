@@ -3,6 +3,7 @@ import './App.css';
 import AddEmployee from './component/AddEmployee';
 import Navbar from './component/Navbar';
 import EmployeeList from './component/EmployeeList';
+import UpdateEmployee from './component/UpdateEmployee';
 
 function App() {
  
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" element={<EmployeeList />}></Route>
       <Route path='/employeeList' element={<EmployeeList />} />
       <Route path='/addEmployee' element={<AddEmployee />} />
+      <Route path='/editEmployee/:id' element={<UpdateEmployee />} />
     </Routes>
     
     </BrowserRouter>
